@@ -1,0 +1,86 @@
+[user]
+	name = Vladimir Skok
+	email = skoksworks@gmail.com
+[core]
+	excludesfile = /Users/Vlad/.gitignore_global
+	editor = nano
+
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = auto
+
+# http://draconianoverlord.com/2010/03/04/git-config.html
+[color "branch"]
+	current = green bold
+	local = green
+	remote = red bold
+[color "sh"]
+	branch = yellow
+[color "diff"]
+	meta = blue bold
+	frag = magenta bold
+	old = red
+	new = green
+[color "status"]
+	added = green
+	changed = blue bold
+	untracked = red
+
+[alias]
+	st = status -sb
+	sb = status -sb
+	aa = add -A
+	br = branch
+	ci = commit
+	co = checkout
+	df = diff
+	ui = update-index
+	unchange = update-index --assume-unchanged
+	change = update-index --no-assume-unchanged
+	dc = diff --cached
+	last = log -1 HEAD
+	lg = log --graph --decorate --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lg10 = log --graph --decorate --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative -10
+	lg20 = log --graph --decorate --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative -20
+	lgf = log --graph --decorate --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative -40
+	lr = log --decorate --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --reverse
+	lr10 = log --decorate --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative -10 --reverse
+	lr20 = log --decorate --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative -10 --reverse
+	tree = log --graph --decorate --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lgq = !git --no-pager log --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative -20
+	today = diff --stat @{12am}..HEAD
+	total = !git log --pretty=oneline | wc -l
+	oh = !git push origin && git push heroku
+
+	tl = tag -l -n100
+
+	rehead = reset HEAD
+	reci = reset --soft HEAD^
+	back = !git reci && git rehead
+
+	rehoh = reset --hard ORIG_HEAD
+
+	# http://blog.blindgaenger.net/advanced_git_aliases.html
+	ignore = !([ ! -e .gitignore ] && touch .gitignore) | echo $1 >>.gitignore
+	r  = !git ls-files -z --deleted | xargs -0 git rm
+	x  = commit -m
+	xa = commit -a -m
+	a  = add
+
+[github]
+	user = Skoks
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[fetch]
+	prune = true
