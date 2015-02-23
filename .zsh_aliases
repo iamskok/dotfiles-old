@@ -1,4 +1,7 @@
 # SSH
 
-vova="root@vova.io"
+alias vova="root@vova.io"
 
+# Helpers
+
+alias c="clear"
