@@ -17,6 +17,14 @@ eval "$(rbenv init -)"
 export NVM_DIR="/Users/Vova/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
+# Source zshaslias
+
+if [ -f ~/.zsh_aliases ]; then
+    source ~/.zsh_aliases
+else
+    print "404: ~/.zsh_aliases not found."
+fi
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
