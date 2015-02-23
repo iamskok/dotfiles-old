@@ -1,4 +1,10 @@
 dotfiles
 ========
 
-zsh, iTerm, etc... 
+## `.zsrhc`
+
+
+## `.gitconfig`
+
+
+## `ZSH-THEME`
