@@ -4,6 +4,12 @@ alias vova="root@vova.io"
 
 alias c="clear"
 alias cat="colorize"
+alias rmd="rm -rf"
+
+# Bower
+alias bi="bower install"
+alias bl="bower list"
+alias bs="bower search"
 
 function take () {
 	mkdir $1
