@@ -11,6 +11,10 @@ alias bi="bower install"
 alias bl="bower list"
 alias bs="bower search"
 
+# Brew
+alias brews='brew list -1'
+alias bubu="brew update && brew upgrade && brew cleanup"
+
 function take () {
 	mkdir $1
 	cd $1
