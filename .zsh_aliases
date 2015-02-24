@@ -2,6 +2,27 @@
 
 alias vova="root@vova.io"
 
-# Helpers
-
 alias c="clear"
+alias cat="colorize"
+
+function take () {
+	mkdir $1
+	cd $1
+}
+
+# git 
+
+git add
+git add -A .
+git commit -m 
+git push
+git push origin 
+git pull 
+git pull origin 
+git rebase 
+git rebase origin 
+git commit --amend
+git branch -v 
+git remote -v 
+git log
+git status
