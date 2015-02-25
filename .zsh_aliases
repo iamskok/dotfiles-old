@@ -19,6 +19,11 @@ alias cat="colorize"
 alias rmd="rm -rf"
 alias cpf="copyfile"
 
+# ZSH
+alias zshrc='subl ~/.zshrc'
+alias zshalias='subl ~/.zsh_alias'
+alias ohmyzsh="subl ~/.oh-my-zsh"
+
 # Bower
 alias bi="bower install"
 alias bl="bower list"
