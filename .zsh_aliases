@@ -82,6 +82,10 @@ alias bs="bower search"
 alias brews='brew list -1'
 alias bubu="brew update && brew upgrade && brew cleanup"
 
+# NPM
+alias ni="npm install"
+alias nig="npm install -g"
+
 # Hide/show all desktop icons (useful when presenting)
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
