@@ -1,5 +1,16 @@
-# SSH
+# Functions
+function take () {
+	mkdir $1
+	cd $1
+}
 
+function copyfile {
+  [[ "$#" != 1 ]] && return 1
+  local file_to_copy=$1
+  cat $file_to_copy | pbcopy
+}
+
+# SSH
 alias vova="root@vova.io"
 
 alias c="clear"
@@ -15,11 +26,6 @@ alias bs="bower search"
 alias brews='brew list -1'
 alias bubu="brew update && brew upgrade && brew cleanup"
 
-function take () {
-	mkdir $1
-	cd $1
-}
-
 # Git
 alias g="git" 
 alias ga="git add"
@@ -28,6 +34,8 @@ alias gmsg="git commit -m"
 alias gmsg!="git commit --amend"
 alias gx="git commit -m"
 alias gx!="git commit --amend"
+alias gt="git tag"
+alias gpt="git push --tags"
 alias gp="git push"
 alias gd="git diff"
 alias gpl="git pull"
@@ -42,5 +50,6 @@ alias gcob="git checkout -b"
 alias gs="git status -sb"
 alias gm="git merge"
 alias gf="git fetch"
+alias gcl="git clone"
 alias gthis="git init && git add . && git commit -m \"initial commit\""
 alias gl="git log --graph --decorate --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
