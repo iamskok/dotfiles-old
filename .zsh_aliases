@@ -24,6 +24,10 @@ alias zshrc='subl ~/.zshrc'
 alias zshaliases='subl ~/.zsh_aliases'
 alias ohmyzsh="subl ~/.oh-my-zsh"
 
+# IP
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+
 # Bower
 alias bi="bower install"
 alias bl="bower list"
