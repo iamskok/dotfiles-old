@@ -20,19 +20,27 @@ function take () {
 	cd $1
 }
 
-# git 
-
-git add
-git add -A .
-git commit -m 
-git push
-git push origin 
-git pull 
-git pull origin 
-git rebase 
-git rebase origin 
-git commit --amend
-git branch -v 
-git remote -v 
-git log
-git status
+# Git
+alias g="git" 
+alias ga="git add"
+alias gaa="git add -A ."
+alias gmsg="git commit -m"
+alias gmsg!="git commit --amend"
+alias gx="git commit -m"
+alias gx!="git commit --amend"
+alias gp="git push"
+alias gd="git diff"
+alias gpl="git pull"
+alias grm="git remote"
+alias grb="git rebase"
+alias gb="git branch"
+alias gba="git branch -a"
+alias gbv="git branch -v"
+alias grv="git remote -v"
+alias gco="git checkout"
+alias gcob="git checkout -b"
+alias gs="git status -sb"
+alias gm="git merge"
+alias gf="git fetch"
+alias gthis="git init && git add . && git commit -m \"initial commit\""
+alias gl="git log --graph --decorate --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"

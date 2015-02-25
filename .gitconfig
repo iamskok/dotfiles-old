@@ -53,7 +53,6 @@
 	lgq = !git --no-pager log --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative -20
 	today = diff --stat @{12am}..HEAD
 	total = !git log --pretty=oneline | wc -l
-	oh = !git push origin && git push heroku
 
 	tl = tag -l -n100
 
