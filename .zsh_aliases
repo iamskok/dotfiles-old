@@ -13,9 +13,11 @@ function copyfile {
 # SSH
 alias vova="root@vova.io"
 
+# Helpers
 alias c="clear"
 alias cat="colorize"
 alias rmd="rm -rf"
+alias cpf="copyfile"
 
 # Bower
 alias bi="bower install"
