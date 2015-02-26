@@ -60,7 +60,7 @@ alias vova="root@vova.io"
 
 # Helpers
 alias c="clear"
-alias cat="colorize"
+alias ccat="colorize"
 alias rmd="rm -rf"
 alias cpf="copyfile"
 

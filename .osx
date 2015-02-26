@@ -1,18 +1,3 @@
-Skip to content
- This repository
-Explore
-Gist
-Blog
-Help
-Vova Skoks
- 
-502  Watch 
-  Star 10,813
- Fork 4,209mathiasbynens/dotfiles
- branch: master  dotfiles/.osx
-Cătălin Marișalrra 21 days ago .osx: Fix code that sets the custom terminal theme
-50 contributors Mathias BynensCătălin MarișErwänn MestDominik PoradaAlex GuerrerodMatt WidmannMatijs BrinkhuisOliver SchrenkMartin ReuringsMarkus Amalthea MagnusonRob TaylorLars KappertKit CambridgeKevin LawlerJonathan Ragan-KelleyManpreet SinghMichael BiancoHerman van BoeijenRicho HealeyNick BudidharmaGiuseppe BurtiniAlexander RossGabriel IzaiasTao WuEugene Zhukand others
-Executable File  791 lines (588 sloc)  36.447 kb RawBlameHistory   
 #!/usr/bin/env bash
 
 # ~/.osx — https://mths.be/osx
