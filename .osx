@@ -22,7 +22,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 sudo pmset -a standbydelay 86400
 
 # Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
+sudo nvram SystemAudioVolume="0"
 
 # Disable transparency in the menu bar and elsewhere on Yosemite
 defaults write com.apple.universalaccess reduceTransparency -bool true
@@ -708,10 +708,10 @@ defaults write ~/Library/Preferences/org.gpgtools.gpgmail SignNewEmailsByDefault
 ###############################################################################
 
 # Start SizeUp at login
-#defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true
+defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true
 
 # Don’t show the preferences window on next start
-#defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false
+defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false
 
 ###############################################################################
 # Sublime Text                                                                #
