@@ -5,11 +5,11 @@ export ZSH=/Users/Vova/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="vovaskok"
+ZSH_THEME="steeef"
 
 # Init ruby version manager
 # Enable shims and autocompletion
-
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # Load NVM
@@ -23,6 +23,14 @@ if [ -f ~/.zsh_aliases ]; then
     source ~/.zsh_aliases
 else
     print "404: ~/.zsh_aliases not found."
+fi
+
+# Source zshfunctions
+
+if [ -f ~/.zsh_functions ]; then
+    source ~/.zsh_functions
+else
+    print "404: ~/.zsh_functions not found."
 fi
 
 # Uncomment the following line to use case-sensitive completion.
@@ -63,7 +71,7 @@ fi
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sublime z web-search last-working-dir history-substring-search history extract zsh-syntax-highlighting)
+plugins=(sublime z web-search history-substring-search history extract colored-man colorize github last-working-dir nyan last-working-dir zsh-syntax-highlighting)
 
 # User configuration
 
