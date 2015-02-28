@@ -71,7 +71,7 @@ fi
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(sublime z web-search history-substring-search history extract colored-man colorize github last-working-dir nyan last-working-dir zsh-syntax-highlighting)
+plugins=(sublime z web-search history-substring-search history extract colored-man colorize github last-working-dir nyan last-working-dir vagrant zsh-syntax-highlighting)
 
 # User configuration
 
