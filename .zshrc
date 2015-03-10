@@ -47,13 +47,6 @@ function prompt_online() {
 
 RPROMPT='$(prompt_online)'
 
-# Scheduled cron job will send emails
-# on every you are going to get 
-# "You have a new mail" message
-# remove all mails rm /var/mail/<user>
-# disable mail check to stop outputting this message
-# unset MAILCHECK
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
