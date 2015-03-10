@@ -33,6 +33,20 @@ else
     print "404: ~/.zsh_functions not found."
 fi
 
+# Online check
+ONLINE='%{%F{green}%}◉'
+OFFLINE='%{%F{red}%}⦿'
+
+function prompt_online() {
+    if [[ -f ~/.offline ]]; then
+        echo $OFFLINE
+    else
+        echo $ONLINE
+    fi
+}
+
+RPROMPT='$(prompt_online)'
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
