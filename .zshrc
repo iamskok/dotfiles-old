@@ -34,6 +34,10 @@ else
 fi
 
 # Online check
+# Add cron job */1    *    *    *    * ~/.online-check.sh
+# If you don't want to get mails in /vat/mail/<user>
+# You can add MAILTO="" on the very top of your cron file
+# To edit cron file use env EDITOR=vim crontab -e command
 ONLINE='%{%F{green}%}◉'
 OFFLINE='%{%F{red}%}⦿'
 
