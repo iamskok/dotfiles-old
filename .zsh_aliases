@@ -6,6 +6,8 @@ alias c="clear"
 alias ccat="colorize"
 alias rmd="rm -rf"
 alias cpf="copyfile"
+alias o="open"
+alias ot="open ."
 
 # IP
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
