@@ -1,6 +1,10 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/Vova/.oh-my-zsh
 
+# Go Path
+# export GOPATH=$HOME/go
+# PATH=$PATH:$GOPATH/bin
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
