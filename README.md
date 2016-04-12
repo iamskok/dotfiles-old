@@ -1,10 +1,6 @@
 dotfiles
 ========
 
-## `.zsrhc`
-
-
-## `.gitconfig`
-
-
-## `ZSH-THEME`
+* `.zsrhc`
+* `.gitconfig`
+* `ZSH-THEME`
